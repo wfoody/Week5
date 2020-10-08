@@ -12,11 +12,11 @@ searchButton.addEventListener("click", () => {
         console.log(weatherItems)
         let description = convertArray(weatherItems.weather[0].description)
         let weatherVar = `<ul>
-                            <p>City: ${weatherItems.name}</p>
-                            <p>Description: ${description}</p>
-                            <p>Minimum Temperature: ${weatherItems.main.temp_min}</p>
-                            <p>Maximum Temperature: ${weatherItems.main.temp_max}</p>
-                            <p>Feels Like: ${weatherItems.main.feels_like}</p>
+                            <p id="lineSpace"><i><span>City: </span></i>${weatherItems.name}</p>
+                            <p><i><span>Description: </span></i>${description}</p>
+                            <p><i><span>High of: </span></i>${weatherItems.main.temp_max}&#176F</p>
+                            <p><i><span>Low of: </span></i>${weatherItems.main.temp_min}&#176F</p>
+                            <p><i><span>Feels Like: </span></i>${weatherItems.main.feels_like}&#176F</p>
                           </ul>`
         weatherOutput.innerHTML = weatherVar
         }

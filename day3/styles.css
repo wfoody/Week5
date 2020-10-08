@@ -1,0 +1,66 @@
+@font-face {
+    font-family: PressStart2P;
+    src: url(PressStart2P-Regular.ttf);
+}
+
+#top {
+    text-align: center;
+    font-family: PressStart2P;
+    color: white;
+    font-size: 12px;
+    margin-top: 50px;
+}
+
+#weatherHeader {
+    font-size: 40px;
+    line-height: 50px;
+
+}
+
+body {
+    background-color: rgb(34, 106, 201);
+    justify-content: center;
+}
+
+#output {
+    color: black;
+    font-family: PressStart2P;
+    font-size: 12px;
+    background-color: white;
+    border-radius: 15px;
+    margin-left: 20px;
+    margin-right: 20px;
+    line-height: 20px;
+    width: 50%;
+}
+
+ul {
+    padding: 10px;
+}
+
+span {
+    color: rgb(196, 22, 22);
+}
+
+button {
+    font-family: PressStart2P;
+    margin-bottom: 20px;
+
+}
+
+input {
+    font-family: PressStart2P;
+    margin: 20px;
+    border-radius: 15px;
+    text-align: center;
+    padding: 5px;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    #output {
+        width: 88%;
+        margin-left: 20px;
+        margin-right: 50px;
+    }
+}
