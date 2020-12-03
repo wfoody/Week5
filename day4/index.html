@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="styles.css" />  
+    <title>Grocery App</title>
+</head>
+
+<body>
+
+       
+    <h1>Grocery App</h1> 
+    <input type="text" id="groceryTextBox" />
+    <input type="text" id="locationTextBox" />
+    <button id="saveButton">Save</button>
+
+    <ul id="storeOutput">
+
+    </ul>
+       
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-firestore.js"></script>
+        <!-- The core Firebase JS SDK is always required and must be listed first -->
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/7.22.1/firebase-analytics.js"></script>
+
+    <script>
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    var firebaseConfig = {
+        apiKey: "AIzaSyAbKfWXs0ZJmXSw2liwGbDZPOCz2wu9vnY",
+        authDomain: "grocery-app-3eba1.firebaseapp.com",
+        databaseURL: "https://grocery-app-3eba1.firebaseio.com",
+        projectId: "grocery-app-3eba1",
+        storageBucket: "grocery-app-3eba1.appspot.com",
+        messagingSenderId: "806530824177",
+        appId: "1:806530824177:web:28475a5f31174fea49f650",
+        measurementId: "G-XFF622J7HB"
+    };
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+
+    var db = firebase.firestore();
+
+    </script>
+    
+    <script src="app.js"></script>
+
+</body>
+
+</html>

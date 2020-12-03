@@ -34,6 +34,10 @@ body {
     width: 50%;
 }
 
+#errorOutput {
+    text-align: center;
+}
+
 ul {
     padding: 10px;
 }

@@ -19,6 +19,7 @@ searchButton.addEventListener("click", () => {
                             <p><i><span>Feels Like: </span></i>${weatherItems.main.feels_like}&#176F</p>
                           </ul>`
         weatherOutput.innerHTML = weatherVar
+        
         }
     ).catch(() => {
         let statement = "Not a city!"
